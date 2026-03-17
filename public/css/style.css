@@ -195,6 +195,7 @@ nav {
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
+    position: relative; /* Para posicionar el botón de menú */
 }
 
 .logo a img{
@@ -639,8 +640,50 @@ nav {
 }
 
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--glass-border);
+        color: var(--text-main);
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+        z-index: 1001;
+        transition: all 0.3s ease;
+    }
+
+    .menu-toggle:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
     .nav-links {
-        display: none; /* Idealmente aquí se colocaría un menú de hamburguesa, lo ocultamos temporalmente para no romper diseño en móvil en un layout base */
+        position: fixed;
+        top: 0;
+        right: -100%; /* Oculto por defecto */
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-left: 1px solid var(--glass-border);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
     }
     
     .footer-content {
@@ -650,7 +693,14 @@ nav {
     }
 
     nav {
-        justify-content: center;
+        justify-content: space-between;
+    }
+}
+
+/* Ocultar botón de menú en escritorio */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
     }
 }
 
@@ -797,5 +847,50 @@ nav {
 @media (max-width: 900px) {
     .contact-container {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding-top: 1rem;
+    }
+
+    .contact-section .section-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-subtitle {
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .contact-container {
+        gap: 2rem;
+    }
+
+    .contact-info, .contact-form-container {
+        padding: 1.5rem;
+    }
+
+    .info-list li {
+        gap: 1rem;
+    }
+
+    .info-list i {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .form-group input, 
+    .form-group textarea {
+        padding: 0.8rem 1rem;
+    }
+
+    .form-submit {
+        padding: 0.8rem;
+        font-size: 1rem;
     }
 }
