@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Menendez | Portfolio & CV</title>
+    <!-- Fuentes modernas de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tu archivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Efectos de fondo oscuro profesional -->
+    <div class="background-effects">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Navegación con efecto "glassmorphism" (vidrio difuminado) -->
+    <header class="glass-header">
+        <nav>
+            <div class="logo"><a href="#">DM.</a></div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="contact.html" class="btn-primary">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Hero (Principal) -->
+        <section id="hero" class="hero fade-in">
+            <div class="hero-content">
+                <span class="greeting">¡Hola! Soy</span>
+                <h1 class="gradient-text">Daniel Menendez</h1>
+                <h2 class="subtitle">Frontend Developer</h2>
+                <p>Apasionado por la tecnología y el desarrollo de software. Me encanta crear soluciones innovadoras y
+                    eficientes que marquen la diferencia. Con experiencia en el desarrollo de páginas web, siempre busco
+                    aprender nuevas tecnologías y mejorar mis habilidades.</p>
+                <div class="hero-buttons">
+                    <a href="#experience" class="btn-primary">Ver mi experiencia</a>
+                    <a href="#" class="btn-secondary"><i class="fas fa-file-pdf"></i> Descargar CV PDF</a>
+                </div>
+            </div>
+            <div class="hero-image glass-card hover-lift">
+                <img src="img/cv.png" alt="Foto">
+                <!-- <i class="fas fa-user-circle"></i> -->
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section id="about" class="fade-in section">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="glass-card full-card hover-lift">
+                <p>Soy un diseñador y desarrollador Front-End apasionado por crear interfaces dinámicas, intuitivas y
+                    con un alto nivel de detalle visual. Aunque mi enfoque principal es construir la cara visible de las
+                    aplicaciones, poseo conocimientos sólidos de Back-End, lo que me permite tener una visión completa
+                    del ciclo de desarrollo y comunicarme de manera efectiva con todo el equipo técnico.</p>
+                <br>
+                <p>Me considero una persona dinámica y altamente adaptable. Disfruto enfrentarme a nuevos retos
+                    tecnológicos y aprender constantemente. Creo firmemente que la sinergia en el trabajo en equipo es
+                    la clave para entregar productos excepcionales, aportando tanto desde el diseño de la experiencia de
+                    usuario (UX/UI) como en la integración de soluciones robustas en el servidor.</p>
+            </div>
+        </section>
+
+        <!-- Sección Experiencia -->
+        <section id="experience" class="fade-in section">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="timeline">
+                <!-- Item de Experiencia 1 (2020) -->
+                <div class="timeline-item glass-card hover-lift">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020</div>
+                    <h3 class="timeline-title">Jr. FrontEnd Developer</h3>
+                    <h4 class="timeline-company">Freelancer - "El Nabo Contento"</h4>
+                    <p>Diseño corporativo y desarrollo Front-End de una página web a medida para una panadería y
+                        verdulería local. Me enfoqué en construir una interfaz atractiva, rápida y 100% responsiva
+                        (Mobile First) utilizando HTML, CSS y JavaScript, resaltando sus productos estrella y
+                        facilitando el contacto con sus clientes.</p>
+                    <a href="https://github.com/DanielMenendez24/el_nabo_contento.git" target="_blank"
+                        class="github-link"><i class="fab fa-github"></i> Ver repositorio</a>
+                </div>
+                <!-- Item de Experiencia 2 (2022) -->
+                <div class="timeline-item glass-card hover-lift">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022</div>
+                    <h3 class="timeline-title">Jr. FrontEnd Developer</h3>
+                    <h4 class="timeline-company">Freelancer - "Solis Films Uy"</h4>
+                    <p>Desarrollo Front-End para la productora de brand-content Solis Films Uy. Implementé un carrusel
+                        dinámico para exhibir de manera atractiva su portafolio de trabajos audiovisuales, además de
+                        secciones dedicadas a presentar a los integrantes del equipo y un formulario de contacto
+                        personalizado, optimizando toda la experiencia de usuario y la navegación visual.</p>
+                    <a href="https://github.com/DanielMenendez24/solisflimsuy.git" target="_blank"
+                        class="github-link"><i class="fab fa-github"></i> Ver repositorio</a>
+                </div>
+                <!-- Item de Experiencia 3 (2024) -->
+                <div class="timeline-item glass-card hover-lift">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                    <h3 class="timeline-title">Fullstack Web Developer</h3>
+                    <h4 class="timeline-company">Proyecto Personal - "REVO Studio"</h4>
+                    <p>Diseño y desarrollo integral de un e-commerce para REVO Studio, una marca de culto enfocada en el
+                        amoblamiento de espacios con diseños personalizados. Combiné mis habilidades de Front-End para
+                        crear una experiencia de compra inmersiva y estética, junto con desarrollo Back-End para
+                        gestionar dinámicamente el catálogo de productos, carritos de compra y bases de datos, logrando
+                        una plataforma robusta y escalable.</p>
+                    <a href="https://github.com/DanielMenendez24/revostudioonline.git" target="_blank"
+                        class="github-link"><i class="fab fa-github"></i> Ver repositorio</a>
+                </div>
+                <!-- Item de Experiencia 4 (2025) -->
+                <div class="timeline-item glass-card hover-lift">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025</div>
+                    <h3 class="timeline-title">Frontend Developer</h3>
+                    <h4 class="timeline-company">Proyecto Personal - Pokédex Nacional</h4>
+                    <p>Desarrollo Front-End de una Pokédex Nacional completa y actualizada con la última generación de
+                        Pokémon disponible. Conecté la aplicación con la PokéAPI para obtener todos los datos en tiempo
+                        real (estadísticas, tipos, evoluciones y habilidades), construyendo una interfaz dinámica,
+                        responsiva y con funciones de búsqueda y filtrado avanzados.</p>
+                    <a href="https://github.com/DanielMenendez24/NatDex.git" target="_blank" class="github-link"><i
+                            class="fab fa-github"></i> Ver repositorio</a>
+                </div>
+                <!-- Item de Experiencia 5 (2026) -->
+                <div class="timeline-item glass-card hover-lift">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2026</div>
+                    <h3 class="timeline-title">Fullstack Web Developer</h3>
+                    <h4 class="timeline-company">Proyecto Personal - "Elegance"</h4>
+                    <p>Desarrollo Fullstack de la landing page y panel de administración para "Elegance", una agencia
+                        ficticia de desarrollo web. En el Front-End exhibí una cuadrícula interactiva con los proyectos
+                        de su portafolio y las tecnologías dominadas por la agencia. Para el Back-End, construí un
+                        sistema que permite gestionar y actualizar dinámicamente dichos proyectos desde un panel de
+                        control privado.</p>
+                    <a href="https://github.com/DanielMenendez24/Elegance.git" target="_blank" class="github-link"><i
+                            class="fab fa-github"></i> Ver repositorio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Educación -->
+        <section id="education" class="fade-in section">
+            <h2 class="section-title">Educación y Certificaciones</h2>
+            <div class="grid-cards">
+                <!-- Tarjeta 1 -->
+                <div class="glass-card hover-lift">
+                    <i class="fas fa-graduation-cap card-icon"></i>
+                    <h3>Bachillerato en Informática</h3>
+                    <h4>Instituto Tecnológico Superior "Arias - Balparda"</h4>
+                    <span class="date">2020</span>
+                    <p>Obtuve una sólida formación técnica en hardware, software, redes y bases de datos, sentando las
+                        bases para mi posterior desarrollo profesional en el mundo de la tecnología.</p>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="glass-card hover-lift">
+                    <i class="fas fa-certificate card-icon"></i>
+                    <h3>Certificación en Desarrollo de Aplicaciones Web</h3>
+                    <h4>FINEST</h4>
+                    <span class="date">2026</span>
+                    <p>Especialización intensiva en desarrollo de software para la web. Adquirí competencias prácticas
+                        en las tecnologías y frameworks más modernos para construir aplicaciones interactivas,
+                        escalables y orientadas a una excelente experiencia de usuario (UX).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section id="skills" class="fade-in section">
+            <h2 class="section-title">Habilidades y Tecnologías</h2>
+            <div class="skills-container glass-card hover-lift">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"
+                            data-description="Lenguaje de marcado estándar para estructurar el contenido de páginas web."><i
+                                class="fab fa-html5"></i> HTML5</span>
+                        <span class="skill-tag"
+                            data-description="Hoja de estilos en cascada que controla el diseño visual, animaciones y responsividad de las páginas."><i
+                                class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-tag"
+                            data-description="Lenguaje de programación dinámico para crear interactividad, lógica de negocio y consumo de APIs en el navegador."><i
+                                class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"
+                            data-description="Librería de JavaScript para construir interfaces de usuario con componentes reutilizables y estado reactivo."><i
+                                class="fab fa-react"></i> React</span>
+                        <!-- <span class="skill-tag">Tailwind CSS</span> -->
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend y Herramientas</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"
+                            data-description="Entorno de ejecución de JavaScript en el servidor, ideal para construir APIs REST y aplicaciones escalables."><i
+                                class="fab fa-node-js"></i> Node.js</span>
+                        <span class="skill-tag"
+                            data-description="Sistema de control de versiones distribuido para rastrear cambios en el código y colaborar en equipo."><i
+                                class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"
+                            data-description="Manejo de bases de datos relacionales (SQL) y no relacionales (NoSQL) como MySQL, PostgreSQL y MongoDB."><i
+                                class="fas fa-database"></i> SQL / NoSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Diseño UX/UI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"
+                            data-description="Herramienta colaborativa en la nube para diseñar prototipos, wireframes e interfaces de usuario de forma rápida."><i
+                                class="fab fa-figma"></i> Figma</span>
+                        <span class="skill-tag"
+                            data-description="Editor de imágenes rasterizadas líder en el mercado. Utilizado para edición fotográfica, composición digital y creación de assets visuales.">Photoshop</span>
+                        <span class="skill-tag"
+                            data-description="Software de diseño vectorial para crear logotipos, íconos, ilustraciones y material gráfico de alta resolución.">Illustrator</span>
+                        <span class="skill-tag"
+                            data-description="Software de edición de video profesional. Utilizado para producir contenido audiovisual, demos y presentaciones de proyectos.">Premiere
+                            Pro</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Gestión de Proyectos</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"
+                            data-description="Marco de trabajo ágil que divide el desarrollo en sprints cortos para entregar valor de forma incremental y adaptativa."><i
+                                class="fas fa-tasks"></i> Scrum</span>
+                        <span class="skill-tag"
+                            data-description="Método de gestión visual que organiza el flujo de trabajo en columnas (Por hacer, En progreso, Hecho) para mayor claridad."><i
+                                class="fas fa-columns"></i> Kanban</span>
+                        <span class="skill-tag"
+                            data-description="Plataforma de gestión de proyectos con tableros, backlogs y seguimiento de bugs, muy popular en equipos de desarrollo."><i
+                                class="fab fa-jira"></i> Jira</span>
+                        <span class="skill-tag"
+                            data-description="Espacio de trabajo todo-en-uno para documentar proyectos, gestionar tareas y organizar el conocimiento del equipo."><i
+                                class="fas fa-project-diagram"></i> Notion</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Daniel Menendez. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/daniel-menendez24" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/DanielMenendez24/" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup flotante (fuera de main y footer para que position:fixed funcione) -->
+    <div id="skill-popup" class="skill-popup" role="tooltip" aria-live="polite">
+        <button class="skill-popup-close" id="skill-popup-close" aria-label="Cerrar">&times;</button>
+        <p id="skill-popup-text"></p>
+    </div>
+
+    <script>
+        (function () {
+            const popup = document.getElementById('skill-popup');
+            const popupText = document.getElementById('skill-popup-text');
+            const closeBtn = document.getElementById('skill-popup-close');
+
+            let activeTag = null;
+
+            function showPopup(tag) {
+                const desc = tag.getAttribute('data-description');
+                if (!desc) return;
+                popupText.textContent = desc;
+                popup.classList.add('active');
+                activeTag = tag;
+                positionPopup(tag);
+            }
+
+            function positionPopup(tag) {
+                /* position:fixed = coordenadas del VIEWPORT, sin scroll */
+                const rect = tag.getBoundingClientRect();
+                const popupW = 280;
+                const margin = 10;
+                const vw = window.innerWidth;
+                const vh = window.innerHeight;
+
+                let left = rect.left;
+                let top = rect.bottom + margin;
+
+                if (left + popupW + margin > vw)
+                    left = vw - popupW - margin;
+                if (left < margin)
+                    left = margin;
+
+                const popupH = popup.offsetHeight || 110;
+                if (rect.bottom + popupH + margin > vh)
+                    top = rect.top - popupH - margin;
+
+                popup.style.left = left + 'px';
+                popup.style.top = top + 'px';
+            }
+
+            function hidePopup() {
+                popup.classList.remove('active');
+                activeTag = null;
+            }
+
+            document.querySelectorAll('.skill-tag[data-description]').forEach(function (tag) {
+                tag.style.cursor = 'pointer';
+                tag.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    if (activeTag === tag) { hidePopup(); return; }
+                    showPopup(tag);
+                });
+            });
+
+            closeBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                hidePopup();
+            });
+
+            document.addEventListener('click', hidePopup);
+            popup.addEventListener('click', function (e) { e.stopPropagation(); });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') hidePopup();
+            });
+            window.addEventListener('resize', function () {
+                if (activeTag) positionPopup(activeTag);
+            });
+        })();
+    </script>
+</body>
+
+</html>
