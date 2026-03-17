@@ -369,11 +369,17 @@ nav {
     margin-bottom: 1rem;
 }
 
-.github-link {
+.experience-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.github-link, .web-link {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: 1.2rem;
     padding: 0.5rem 1.2rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -391,6 +397,14 @@ nav {
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.web-link:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
 }
 
 /* CARDS GRID (Educación / Certificados) */
